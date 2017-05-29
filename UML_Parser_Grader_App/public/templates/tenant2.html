@@ -1,0 +1,76 @@
+<div>
+    <form name="form2" class="form-style-9 check-element animate-show-hide" id="upright" >
+        <ul class="form-style-1">
+            <li>
+                <input type = "file" file-model = "myFile" accept="application/x-zip-compressed"/>
+            </li>
+            <li>
+                <button ng-click = "uploadFile()">upload me</button>
+            </li>
+           <!-- <li>
+                <br>
+                <br>
+                <button ng-click="generateUML()">Generate UML Diagram</button>
+                <br>
+                <br>
+            </li>-->
+            <!-- <li>
+
+                 <input type="file" ng-file-select="fileSelected($files)" accept="'image/*'">
+                 <input type="submit" ng-click="uploadFile()" >
+             </li>-->
+            <!--<li>
+                <input type = "file" file-model = "myFile"/>
+                <button ng-click = "uploadFile()">Upload</button>
+            </li>-->
+            <!--<li>
+                <br /> <img ng-src="{{umlimg}}"  width="400" height="400">
+            </li>-->
+            <li>
+                <br /> <img src="data:image/JPEG;base64,{{umlimg}}" ng-model="umlimg" width="700" height="600">
+            </li>
+        </ul>
+    </form>
+
+    <form name="form1" class="form-style-9 check-element animate-show-hide" ng-show="graderChecked" id="upleft">
+        <ul class="form-style-1">
+
+            <li>
+                <label ng-model="msg"> <span class="required"></span>{{msg}}</label>
+            </li>
+            <li>
+                <label>StudentID <span class="required">*</span></label>
+                <input required=true type="text" name="username" class="field-long" ng-model="studentid" />
+            </li>
+            <li>
+                <label>Student Name<span class="required">*</span></label>
+                <input required=true type="text" name="passwd" class="field-long" ng-model="studentname" />
+            </li>
+            <li >
+                <label>
+                    Grade :
+                    <select ng-model="grade" class="field-select" id="grade" required=true>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </label>
+            </li>
+
+            <li>
+                <label>Comments<span class="required">*</span></label>
+                <textarea required="true" class="field-long" ng-model="gradecomments"></textarea>
+
+            </li>
+            <li>
+                <button style="width: 30%" ng-click = "submitGrades()">Submit </button>
+            </li>
+
+            <li>
+                <p ng-bind-html="msg"></p>
+            </li>
+        </ul>
+    </form>
+</div>

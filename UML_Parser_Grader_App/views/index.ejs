@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UML</title>
+
+  <script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+  <script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+  <link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel='stylesheet' href='/stylesheets/login1.css' />
+  <link rel='stylesheet' href='/stylesheets/login.css' />
+  <!-- Loading the AngularJS file from /public/angularJS folder -->
+
+</head>
+<script src="http://mymaplist.com/js/vendor/TweenLite.min.js"></script>
+<script src="angularJS/main.js"></script>
+<body ng-app="umlParserGraderApp">
+<h1>UML Parser Grader Multi-tenant SaaS Application </h1>
+
+
+<div ng-controller="loginController">
+  <form name="form1" class="form-style-9">
+    <ul class="form-style-1">
+      <li>
+        <label ng-model="msg"> <span class="required"></span>{{msg}}</label>
+      </li>
+      <li>
+        <label>Username <span class="required">*</span></label>
+        <input required=true type="text" name="username" class="field-long" ng-model="username" />
+      </li>
+      <li>
+        <label>Password<span class="required">*</span></label>
+        <input required=true type="password" name="passwd" class="field-long" ng-model="passwd" />
+      </li>
+      <li>
+        <button style="width: 30%" ng-click = "login()">Login</button>
+      </li>
+
+      <li>
+        <label ng-model="msg"></label>
+      </li>
+    </ul>
+  </form>
+
+</div>
+<ng-view></ng-view>
+</body>
+</html>

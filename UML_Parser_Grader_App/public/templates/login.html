@@ -1,0 +1,25 @@
+<div>
+    <form name="form1" class="form-style-9">
+        <ul class="form-style-1">
+            <li>
+                <label ng-model="msg"> <span class="required"></span>{{msg}}</label>
+            </li>
+            <li>
+                <label>Username <span class="required">*</span></label>
+                <input required=true type="text" name="username" class="field-long" ng-model="username" />
+            </li>
+            <li>
+                <label>Password<span class="required">*</span></label>
+                <input required=true type="text" name="passwd" class="field-long" ng-model="passwd" />
+            </li>
+
+            <li>
+                <button style="width: 30%" ng-click = "login()">Login</button>
+            </li>
+
+            <li>
+                <label ng-model="msg"></label>
+            </li>
+        </ul>
+    </form>
+</div>
