@@ -2,17 +2,6 @@
 
 It is a Software as a Service application which provides UML parser as a backend and a web portal through which java source can be submitted to the UML parser hosted in cloud and can be graded.
 
-# Table of contents
-Objective
-Getting Started
-Architecure Diagram
-Technology Stack
-Features
-Demo Video
-Future Enhancements
-Objective
-Objective was to develop a Multi-Tenant, Cloud Scalable, Multi-AZ SaaS App using Amazon Web Services.
-
 # Technology Stack
 AWS (Deployment of servers, load balancing using ELB and EC2 Auto Scaling)
 Node (Back End)
